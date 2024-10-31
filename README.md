@@ -20,6 +20,33 @@ Be aware, the installation needs technical skills and is not for beginners. Plea
 
 [Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration) - Unleash the full potential of your CPU and GPU
 
+### Step 1: Create a Virtual Environment (if not already done)
+
+It is recommended to set up a virtual environment to manage dependencies and versions specifically for Roop. (**Python 3.10** is recommended)
+
+```bash
+python3.10 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+### Step 2: Install Dependencies
+
+Once inside the virtual environment, install the dependencies by running:
+
+```bash
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
+```
+
+### Running Roop
+
+Once installed, Roop can be run in headless mode using the following command:
+
+```bash
+python run.py -s path/to/source_image.jpg -t path/to/target_video.mp4 -o path/to/output_directory/
+```
 
 ## Usage
 
